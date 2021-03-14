@@ -1,4 +1,57 @@
+.container {
+  padding: 30px;
+  border: 1px solid blue;
+}
 .title {
   color: rgb(6, 78, 42);
   font-size: 22px;
+}
+
+.pictures {
+  list-style: none;
+  display: flex;
+
+  margin: 0;
+}
+.item-pic {
+  border: 2px solid skyblue;
+}
+.item-pic:not(:last-child) {
+  margin-right: 30px;
+}
+
+.buttonAdd {
+  background-color: aquamarine;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+}
+.buttonRem {
+  background-color: tomato;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* .valid {
+  
+  border: 2px solid green;
+  outline-color: green;
+} */
+
+/* .invalid {
+
+  border: 2px solid red;
+  outline-color: red;
+}  */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }

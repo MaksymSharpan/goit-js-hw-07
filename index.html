@@ -5,66 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>Java Script</title>
+    <title>DOM</title>
   </head>
   <body>
-    <h1 class="title">Hello World</h1>
-
+    <!-- <h1 class="title">Hello World</h1> -->
+    <button class="magic">it's a magic !</button>
+    <p><a href="/goit.html">link on page 2</a></p>
     // TASK 1
-    <ul id="categories">
-      <li class="item">
-        <h2>Животные</h2>
+    <div class="container">
+      <ul id="categories">
+        <li class="item">
+          <h2>Животные</h2>
 
-        <ul>
-          <li>Кот</li>
-          <li>Хомяк</li>
-          <li>Лошадь</li>
-          <li>Попугай</li>
-        </ul>
-      </li>
-      <li class="item">
-        <h2>Продукты</h2>
+          <ul>
+            <li>Кот</li>
+            <li>Хомяк</li>
+            <li>Лошадь</li>
+            <li>Попугай</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Продукты</h2>
 
-        <ul>
-          <li>Хлеб</li>
-          <li>Петрушка</li>
-          <li>Творог</li>
-        </ul>
-      </li>
-      <li class="item">
-        <h2>Технологии</h2>
+          <ul>
+            <li>Хлеб</li>
+            <li>Петрушка</li>
+            <li>Творог</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Технологии</h2>
 
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
-        </ul>
-      </li>
-    </ul>
-    // TASK 2
-    <ul id="ingredients"></ul>
-
-    // TASK 3
-
-    <ul id="gallery"></ul>
-
-    // TASK 4
-
-    <div id="counter">
-      <button type="button" data-action="decrement">-1</button>
-      <span id="value">0</span>
-      <button type="button" data-action="increment">+1</button>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </li>
+      </ul>
     </div>
+    // TASK 2
+    <div class="container">
+      <ul id="ingredients"></ul>
+    </div>
+    // TASK 3
+    <div class="container">
+      <ul id="gallery"></ul>
+    </div>
+    // TASK 4
+    <div class="container">
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+    </div>
+    // TASK 5
+    <div class="container">
+      <input type="text" placeholder="Ваше имя?" id="name-input" />
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </div>
+    // TASK 6
+    <div class="container">
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+      />
+    </div>
+    // TASK 7
+    <div class="container">
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </div>
+
+    // TASK 8
+    <div class="container">
+      <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Создать</button>
+        <button type="button" data-action="destroy">Очистить</button>
+      </div>
+
+      <div id="boxes"></div>
+    </div>
+
     <!-- // SCRIPT -->
-    <script src="/js/script_ht_ 1.js" type="module"></script>
-    <script src="/js/script_ht_ 2.js" type="module"></script>
-    <script src="/js/script_ht_ 3.js" type="module"></script>
-    <script src="/js/script_ht_ 4.js" type="module"></script>
-    <script src="/js/script_ht_ 5.js" type="module"></script>
-    <script src="/js/script_ht_ 6.js" type="module"></script>
-    <script src="/js/script_ht_ 7.js" type="module"></script>
-    <script src="/js/script_ht_ 8.js" type="module"></script>
+    <script src="/js/task_01.js" type="module"></script>
+    <script src="/js/task_02.js" type="module"></script>
+    <script src="/js/task_03.js" type="module"></script>
+    <script src="/js/task_04.js" type="module"></script>
+    <script src="/js/task_05.js" type="module"></script>
+    <script src="/js/task_06.js" type="module"></script>
+    <script src="/js/task_07.js" type="module"></script>
+    <script src="/js/task_08.js" type="module"></script>
   </body>
 </html>
